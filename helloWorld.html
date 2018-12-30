@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <script type="text/javascript">
+        // alert("ok");
+       /* window.onload = function () {
+            alert("ok");
+            var body = document.getElementsByTagName("body")[0];
+            var input = document.createElement("input");
+            input.type = "text";
+            input.value = "你好！";
+            body.appendChild(input);
+        }*/
+
+
+    </script>
+
+</head>
+<body>
+1
+<script>
+
+    // var btn = document.createElement("input");
+    // btn.type = "text";
+    // btn.value = "我";
+    // var body = document.getElementsByTagName("body")[0];
+    // body.appendChild(btn);
+    // 异步载入JavaScript
+    function loadAsync(url)
+    {
+
+        var head = document.getElementsByTagName("body")[0];
+        var s = document.createElement("script");
+        s.src = url;
+        head.appendChild(s);
+    }
+
+    // document.write("异步加载appendStuff.js开始...<br\>");
+    loadAsync("appendStuff.js");
+    // document.write("异步加载appendStuff.js结束<br\>");
+
+</script>
+<script>
+    var btn = document.createElement("input");
+    btn.type = "button";
+    btn.value = "同步";
+    var body = document.getElementsByTagName("body")[0];
+    body.appendChild(btn);
+</script>
+2
+
+</body>
+</html>
